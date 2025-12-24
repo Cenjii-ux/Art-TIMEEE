@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Letter for My Wife ❤️</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+      color: #000000;
+      text-align: center;
+      padding: 50px;
+    }
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      max-width: 600px;
+      margin: auto;
+    }
+    h1 {
+      color: #d6336c;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    button {
+      background: #d6336c;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      margin-top: 20px;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #a61e4d;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Hello Love!.</h1>
+    <p>
+      Merry Chritmas LOVE!  
+      I’m looking forward to celebrating the holidays with you.
+      I am more excited to celebrate the hollidays with you❤️❤️❤️
+    </p>
+
+    </p>
+    <p class="hidden" id="secretMessage">
+      I LOVE YOU LOVE❤️❤️❤️<br>
+      -Rubie
+    </p>
+    <button onclick="revealLove()">Click this💕</button>
+  </div>
+
+  <script>
+    function revealLove() {
+      document.getElementById("secretMessage").classList.remove("hidden");
+    }
+  </script>
+</body>
+</html>
