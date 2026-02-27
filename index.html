@@ -1,72 +1,397 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Love Letter for My Hubby ❤️</title>
-  <style>
-    body {
-      font-family: 'Georgia', serif;
-      background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
-      color: #000000;
-      text-align: center;
-      padding: 50px;
-    }
-    .card {
-      background: white;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-      max-width: 600px;
-      margin: auto;
-    }
-    h1 {
-      color: #d6336c;
-    }
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-    }
-    button {
-      background: #d6336c;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      margin-top: 20px;
-      border-radius: 25px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background: #a61e4d;
-    }
-    .hidden {
-      display: none;
-    }
-  </style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movement Through Time</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+}
+
+/* SECTION STYLE */
+section {
+    min-height: 100vh;
+    padding: 60px 10%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+/* MOVEMENT COLORS */
+.renaissance { background: #1a1a2e; }
+.baroque { background: #523311; }
+.impressionism { background: #185454; }
+.modernism { background: #5d1a1a; }
+
+/* ARTIST CARDS */
+.slide-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.artist-card {
+    background: #1f1f1f;
+    width: 300px;
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.artist-card{
+    min-height: 420px;
+}
+
+.artist-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255,255,255,0.3);
+}
+
+.artist-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* ARTWORK GRID */
+.artworks {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.artworks img {
+    width: 90px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+}
+
+.evolution-section{
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0a0a0a, #111);
+    color: white;
+    padding: 100px 40px;
+}
+
+.evolution-container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.evolution-title{
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.evolution-line{
+    width: 120px;
+    height: 3px;
+    background: gold;
+    margin: 20px auto 40px auto;
+}
+
+.evolution-text{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 50px;
+    color: #ccc;
+}
+
+.evolution-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.evolution-card{
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.4s;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.evolution-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(255,215,0,0.2);
+}
+
+/* Color themes per movement */
+
+.renaissance{
+    background: linear-gradient(145deg, #3a2c1a, #1a140a);
+}
+
+.baroque{
+    background: linear-gradient(145deg, #2a1a1a, #140a0a);
+}
+
+.impressionism{
+    background: linear-gradient(145deg, #1a2a3a, #0a141f);
+}
+
+.modernism{
+    background: linear-gradient(145deg, #2a2a2a, #111);
+}
+
+.evolution-summary{
+    margin-top: 60px;
+    text-align: center;
+    font-size: 20px;
+    color: gold;
+}
+
+</style>
 </head>
+
 <body>
-  <div class="card">
-    <h1>Hello Love!.</h1>
-    <p>
-      Merry Chritmas LOVE!  
-      I’m looking forward to celebrating the holidays with you.
-      I am more excited to celebrate the hollidays with you❤️❤️❤️
-    </p>
 
-    </p>
-    <p class="hidden" id="secretMessage">
-      I LOVE YOU LOVE❤️❤️❤️<br>
-      -Rubie
-    </p>
-    <button onclick="revealLove()">Click this💕</button>
-  </div>
+<h1>Movement Through Time</h1>
+<p style="text-align:center;">
+Name: Jumawid, Charles Emerson N.<br>
+Course/Year/Section: BSCS 1st yr 1D
+</p>
 
-  <script>
-    function revealLove() {
-      document.getElementById("secretMessage").classList.remove("hidden");
-    }
-  </script>
+<!-- ================= RENAISSANCE ================= -->
+
+<section class="renaissance">
+
+<h2>Renaissance</h2>
+
+<div class="slide-container">
+
+<!-- Leonardo -->
+<div class="artist-card"
+onclick="window.open('https://www.britannica.com/biography/Leonardo-da-Vinci')">
+
+<img class="artist"
+src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Leonardo_self.jpg">
+
+<h3>Leonardo da Vinci</h3>
+
+<div class="artworks">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Mona_Lisa.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg/500px-The_Last_Supper_-_Leonardo_Da_Vinci_-_High_Resolution_32x16.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Da_Vinci_Vitruve_Luc_Viatour.jpg/330px-Da_Vinci_Vitruve_Luc_Viatour.jpg">
+</div>
+
+</div>
+
+<!-- Michelangelo -->
+<div class="artist-card"
+onclick="window.open('https://www.britannica.com/biography/Michelangelo')">
+
+<img class="artist"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg/250px-Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg">
+
+<h3>Michelangelo</h3>
+
+<div class="artworks">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/%27David%27_by_Michelangelo_Fir_JBU004.jpg/250px-%27David%27_by_Michelangelo_Fir_JBU004.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg/330px-Michelangelo_-_Creation_of_Adam_%28cropped%29.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Sistine_Chapel_ceiling_02_%28brightened%29.jpg/250px-Sistine_Chapel_ceiling_02_%28brightened%29.jpg">
+</div>
+
+</div>
+
+<!-- Raphael -->
+<div class="artist-card"
+onclick="window.open('https://www.britannica.com/biography/Raphael-Italian-painter-and-architect')">
+
+<img class="artist"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Raffaello_Sanzio.jpg/250px-Raffaello_Sanzio.jpg">
+
+<h3>Raphael</h3>
+
+<div class="artworks">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg/330px-%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/RAFAEL_-_Madonna_Sixtina_%28Gem%C3%A4ldegalerie_Alter_Meister%2C_Dresden%2C_1513-14._%C3%93leo_sobre_lienzo%2C_265_x_196_cm%29.jpg/330px-RAFAEL_-_Madonna_Sixtina_%28Gem%C3%A4ldegalerie_Alter_Meister%2C_Dresden%2C_1513-14._%C3%93leo_sobre_lienzo%2C_265_x_196_cm%29.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Transfiguration_Raphael.jpg/330px-Transfiguration_Raphael.jpg">
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ================= BAROQUE ================= -->
+
+<section class="baroque">
+
+<h2>Baroque</h2>
+
+<div class="slide-container">
+
+<!-- Caravaggio -->
+<div class="artist-card"
+onclick="window.open('https://www.britannica.com/biography/Caravaggio')">
+
+<img class="artist"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bild-Ottavio_Leoni%2C_Caravaggio.jpg/250px-Bild-Ottavio_Leoni%2C_Caravaggio.jpg">
+
+<h3>Caravaggio</h3>
+
+<div class="artworks">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg/500px-Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Caravaggio_-_Giuditta_e_Oloferne_%28ca._1599%29.jpg/500px-Caravaggio_-_Giuditta_e_Oloferne_%28ca._1599%29.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/David_with_the_Head_of_Goliath-Caravaggio_%281610%29.jpg/330px-David_with_the_Head_of_Goliath-Caravaggio_%281610%29.jpg">
+</div>
+
+</div>
+
+<!-- Rembrandt -->
+<div class="artist-card"
+onclick="window.open('https://www.britannica.com/biography/Rembrandt-van-Rijn')">
+
+<img class="artist"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg/250px-Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg">
+
+<h3>Rembrandt</h3>
+
+<div class="artworks">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg/500px-La_ronda_de_noche%2C_por_Rembrandt_van_Rijn.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Rembrant_Self-Portrait%2C_1660.jpg/330px-Rembrant_Self-Portrait%2C_1660.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg/330px-Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg">
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ================= IMPRESSIONISM ================= -->
+
+<section class="impressionism">
+
+<h2>Impressionism</h2>
+
+<div class="slide-container">
+
+<!-- Monet -->
+<div class="artist-card"
+onclick="window.open('https://www.britannica.com/biography/Claude-Monet')">
+
+<img class="artist"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Claude_Monet_1899_Nadar_crop.jpg/250px-Claude_Monet_1899_Nadar_crop.jpg">
+
+<h3>Claude Monet</h3>
+
+<div class="artworks">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/330px-Monet_-_Impression%2C_Sunrise.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/WLA_metmuseum_Water_Lilies_by_Claude_Monet.jpg/330px-WLA_metmuseum_Water_Lilies_by_Claude_Monet.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Monet_-_Waves_Breaking%2C_1881.jpg/250px-Monet_-_Waves_Breaking%2C_1881.jpg">
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ================= MODERNISM ================= -->
+
+<section class="modernism">
+
+<h2>Modernism</h2>
+
+<div class="slide-container">
+
+<!-- Picasso -->
+<div class="artist-card"
+onclick="window.open('https://www.britannica.com/biography/Pablo-Picasso')">
+
+<img class="artist"
+src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Pablo_picasso_1.jpg/250px-Pablo_picasso_1.jpg">
+
+<h3>Pablo Picasso</h3>
+
+<div class="artworks">
+<img src="https://upload.wikimedia.org/wikipedia/en/7/74/PicassoGuernica.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/74/PicassoGuernica.jpg/330px-PicassoGuernica.jpg">
+<img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Old_guitarist_chicago.jpg/330px-Old_guitarist_chicago.jpg">
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ELEMENTS & PRINCIPLES EVOLUTION SECTION -->
+<section class="evolution-section fade-in">
+
+    <div class="evolution-container">
+
+        <h1 class="evolution-title">
+            Evolution of Elements and Principles of Art
+        </h1>
+
+        <div class="evolution-line"></div>
+
+        <p class="evolution-text">
+            Throughout history, the elements and principles of art evolved as artists explored new ideas, techniques, and ways of expression.
+        </p>
+
+        <div class="evolution-grid">
+
+            <div class="evolution-card renaissance">
+                <h2>Renaissance</h2>
+                <p>
+                    Artists focused on realism, proportion, balance, and perspective. Line, form, and space were carefully used to create lifelike images. Balance and harmony created order and perfection.
+                </p>
+            </div>
+
+            <div class="evolution-card baroque">
+                <h2>Baroque</h2>
+                <p>
+                    Artists emphasized contrast, movement, and emotion. Strong light and dark contrasts, dramatic compositions, and dynamic lines created intensity and emotional depth.
+                </p>
+            </div>
+
+            <div class="evolution-card impressionism">
+                <h2>Impressionism</h2>
+                <p>
+                    Focus shifted toward light, color, and atmosphere. Visible brushstrokes and bright colors captured moments rather than perfect realism. Emphasis was created through lighting and color.
+                </p>
+            </div>
+
+            <div class="evolution-card modernism">
+                <h2>Modernism</h2>
+                <p>
+                    Artists experimented with abstraction and distortion. Shape, color, and line were used freely. Balance and proportion became expressive instead of realistic.
+                </p>
+            </div>
+
+        </div>
+
+        <p class="evolution-summary">
+            Overall, art evolved from realistic representation to creative and abstract expression, reflecting cultural and intellectual change across time.
+        </p>
+
+    </div>
+
+</section>
+<footer>
+Museum Timeline Website | CENJi 1D
+</footer>
+
 </body>
 </html>
-
